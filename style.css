@@ -1,0 +1,331 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+header{
+    text-align: center;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+}
+.wrapper{
+    background-color: #fff;
+    width: 450px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+    0 32px 64px -48px rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+}
+
+/* CSS CODE FOR SIGNUP FORM */
+
+.form{
+    padding: 25px 30px;
+}
+.form header{
+    font-size: 25px;
+    font-weight: 600;  
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.form form{
+    margin: 20px 0;
+
+}
+
+.form form .error-txt{
+    color: #721c24;
+    background-color: #fd8d7a;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #f5c6cb;
+    display: none;
+}
+.form form .field{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+}
+
+.form form .field input{
+    outline: none;
+}
+.form form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 15px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+.form form .input label{
+    margin: 3px 0;
+}
+.form form .image input{
+    font-size: 17px;
+    cursor: pointer;
+}
+.form form .button input{
+    margin-top: 13px;
+    height: 45px;
+    border: none;
+    font-weight: 400;
+    background: #333 ;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form form .button input:hover{
+    background: #fff;
+    color: #333;
+    font-weight: 500;
+}
+.form .link{
+    text-align: center;
+    font-size: 17px;
+    margin: 10px 0;
+}
+.form .link a{
+    color: #333 ;
+}
+.form .link a:hover{
+    text-decoration: underline;
+}
+.form form .field i{
+    position: absolute;
+    right: 15px;
+    top: 70%;
+    transform: translateY(-50%);
+    color: #ccc;
+    cursor: pointer;
+
+}
+
+
+/*CSS CODE FOR USERS AREA*/
+.users{
+    padding: 25px 30px;
+}
+.users header,
+.users-list a{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6; 
+}
+.users header .content, .users-list a .content{
+    display: flex;
+}
+.users header .content img{
+    height: 50px;
+    width: 50px;
+}
+.wrapper img{
+    object-fit: cover;
+    border-radius: 50%;
+}
+.users header .details{
+    margin-left: 5px;
+}
+
+.users header .details span{
+    
+    font-size: 18px;
+    font-weight: 700;
+   
+}
+.users header .logout{
+    color: #fff;
+    background-color: #333;
+    padding: 7px 15px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.users .search{
+    position: relative;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.users .search .text{
+    font-size: 18px;
+}
+.users .search input{
+    position: absolute;
+    height: 42px;
+    width:calc(100% - 50px);
+    border: 1px solid #ccc;
+    padding: 0 13px;
+    font-size: 14px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    border: none;
+   
+}
+.users .search input.active{
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+}
+.users .search button{
+    width: 47px;
+    height: 42px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    background-color: #333;
+    border-radius: 0 5px 5px 0;
+}
+.users .search button.active{
+    background-color: #fff;
+    color: #333;
+
+}
+.users-list{
+max-height: 350PX;
+overflow-y: auto;
+}
+:is(.chat-box, .users-list)::-webkit-scrollbar{
+    width: 0px;
+}
+.users-list a .content img{
+    height: 40px;
+    width: 40px;
+}
+.users-list a{
+    padding-right: 15px;
+    margin-bottom: 15px;
+    page-break-after: 10px;
+    border-bottom-color:#f1f1f1 ;
+}
+.details{
+    color: #333;
+    margin: 0 10px;
+}
+.users-list a .status-dot{
+    font-size: 12px;
+    color:#468669 ;
+
+}
+.users-list a:last-child{
+    border: none;
+    margin-bottom: 0px;
+}
+.users-list a .content p{
+    color: #67676a;
+}
+.users-list a .status-dot .offline{
+    color: #ccc;
+}
+
+
+/* CSS CODE FOR CHAT AREA*/
+
+.chat-area header{
+    display: flex;
+    align-items: center;
+    padding: 18px 30px;
+}
+.chat-area  header img{
+    width: 45px;
+    height: 45px;
+}
+.chat-area header .back-icon{
+    font-size: 18x;
+    color: #333;
+    margin: 0 15px;
+}
+.chat-area header span{
+    font-size: 18px;
+    font-weight: 700;
+}
+.chat-box{
+    height: 500px;
+    background: #f7f7f7 ;
+    padding: 10px 30px 20px 30px;
+    box-sizing: inset 0 32px 32px -32px rgb(0 0 0/ 5%),
+    inset 0 -32px 32px -32px rgb(0 0 0/ 5%);
+    overflow-y: auto;
+}
+.chat-box .outgoing{
+    display: flex;
+}
+.chat-box .chat p{
+    word-wrap: break-word;
+    padding: 8px 16px;
+    box-shadow: 0 0 32px rgb(0 0 0/ 8%),
+    0 16px 16px -16px rgb(0 0 0/ 10%);
+
+}
+.chat-box .chat{
+    margin: 15px 0;
+}
+.outgoing .details p{
+    background: #333;
+    color: #fff;
+    border-radius: 18px 18px 0 18px;
+}
+.outgoing .details{
+    margin-left: auto;
+    max-width: calc(100% - 130px);
+}
+.chat-box .incomig{
+    display: flex;
+    align-items: flex-end;
+    
+}
+.incoming .details{
+    margin-right: 10px;
+    max-width: calc(100% - 130px);
+    
+}
+.chat-box .incoming img{
+    height: 35px;
+    width: 35px;
+
+}
+.incoming .details p{
+    color: #333;
+    border-radius: 18px 18px 18px 0;
+}
+.chat-area .typing-area{
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.typing-area input{
+    padding: 0 10px;
+    border: none;
+    width: 100%;
+    height: 45px;
+    outline: none;
+    font-size: 15px;
+}
+.typing-area button{
+    background-color: #333;
+    color: #ccc;
+    height: 45px;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    
+}
+.typing-area button i{
+    font-size: 18px;
+}
