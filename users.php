@@ -28,7 +28,8 @@ if(!isset($_SESSION['unique_id'])){
             </div>
 
           </div>
-          <a class="logout" href="#">Wyloguj się</a>
+          <a class="logout" href="php/logout.php?user_id=<?php echo $row['unique_id'];
+          ?>" class="logout">Wyloguj się</a>
         </header>
         <div class="search">
             <span class="text">Wybierz użytkownika do czatu</span>

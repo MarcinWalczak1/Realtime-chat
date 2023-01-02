@@ -230,7 +230,7 @@ overflow-y: auto;
 .users-list a .content p{
     color: #67676a;
 }
-.users-list a .status-dot .offline{
+.users-list a .status-dot.offline{
     color: #ccc;
 }
 
