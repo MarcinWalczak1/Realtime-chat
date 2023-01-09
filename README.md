@@ -1,4 +1,4 @@
-# Realtime-chat
+
 
 Realtime chat is an application that allows you to communicate with users in real time.
 
